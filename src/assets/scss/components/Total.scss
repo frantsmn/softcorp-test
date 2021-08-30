@@ -1,0 +1,20 @@
+.cart-total {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: aliceblue;
+
+    padding: 20px;
+    border-radius: 3px;
+
+    &__label {
+        margin-right: 10px;
+        font-size: 0.85rem;
+    }
+
+    &__value {
+        font-weight: 600;
+        font-size: 1.7rem;
+        line-height: 1.45rem;
+    }
+}

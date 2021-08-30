@@ -1,0 +1,59 @@
+.cart-row {
+    &__name {
+        display: inline-block;
+
+        max-width: 500px;
+    }
+
+    &__amount {
+        position: relative;
+        white-space: nowrap;
+    }
+
+    &__amount-warn {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+
+        width: max-content;
+        max-width: 150px;
+
+        margin-bottom: 5px;
+        padding: 2px;
+        border: dashed rgba(255, 68, 0, 0.5) 1px;
+        border-radius: 3px;
+        background-color: rgba(255, 238, 206, 1);
+
+        font-size: 0.75rem;
+        white-space: normal;
+    }
+
+    &__amount-input {
+        display: inline-block;
+
+        max-width: 50px;
+        &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    }
+
+    &__price {
+        font-weight: bold;
+    }
+
+    &__delete-cell {
+        text-align: right;
+    }
+    &__delete-btn {
+        margin: 4px 0 4px 4px;
+
+        color: rgb(255, 020, 020);
+        &:hover {
+            box-shadow: 1px 1px 2px 0 rgba(255, 20, 20, 0.3);
+        }
+        &:active {
+            box-shadow: 1px 1px 2px -1px rgba(255, 20, 20, 0.3);
+        }
+    }
+}

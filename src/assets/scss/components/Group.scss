@@ -1,0 +1,33 @@
+.group {
+    overflow: hidden;
+
+    border: solid 1px gray;
+    border-radius: 3px 3px 0 0;
+
+    &__header {
+        padding: 4px;
+        border-bottom: 1px solid gray;
+        background-color: #bae3f0;
+
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-flow: column;
+
+        margin: 0;
+        padding: 0;
+
+        list-style-type: none;
+
+        transition: 0.15s ease-out;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            border-bottom: 1px solid gray;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.catalog {
+    columns: 300px 2;
+    column-gap: 5px;
+
+    &__group {
+        display: inline-block;
+
+        width: 100%;
+        min-width: 300px;
+    }
+
+    &__error-message {
+        position: fixed;
+        top: 0;
+        left: 50%;
+
+        max-width: 250px;
+
+        padding: 5px;
+        border-radius: 0 0 3px 3px;
+        box-shadow: 1px 1px 4px 1px rgba(71, 6, 6, 0.35);
+        background-color: rgb(255, 52, 52);
+
+        color: white;
+        font-size: 0.85rem;
+        text-align: center;
+
+        transform: translateX(-50%);
+
+        span,
+        button {
+            display: inline-block;
+            margin: 5px;
+        }
+
+        button {
+            color: red;
+
+            &:hover {
+                box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
+            }
+            &:active {
+                box-shadow: 1px 1px 2px -1px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}

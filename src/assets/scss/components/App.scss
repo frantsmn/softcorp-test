@@ -1,0 +1,37 @@
+#app {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-content: space-between;
+
+    max-width: 1200px;
+    min-height: 100vh;
+
+    margin: 0 auto;
+    padding: 20px;
+    @media (max-width: 800px) {
+        padding: 5px;
+    }
+
+    color: #2c3e50;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.section {
+    width: 100%;
+    padding: 10px;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 0.4rem;
+    border: solid 1px currentColor;
+    border-radius: 3px;
+    display: inline-block;
+    background-color: #fff;
+    white-space: nowrap;
+    appearance: none;
+}
